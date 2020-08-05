@@ -1,3 +1,6 @@
+
+## We got the example in the course and changed "mean" to "inverse" because it is the function that we need
+## In this first case we are getting the matrix for calling cacheSolve
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
   set <- function(y) {
@@ -13,6 +16,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
+## After converting our matrix in Cache Matrix we can call cacheSolve for our makeCacheMatrix
+## Here we're going to get the inverse of our matrix
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
   if (!is.null(i)) {
